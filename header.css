@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Turret+Road&display=swap");
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body,
+article,
+section,
+div,
+span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root {
+    font-size: calc(0.55vw + 0.55vh + .1.2vmin);
+  }
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+  font-family: "turret Road";
+    font-size: 1.5rem;
+    font-weight: bolder;
+  background-color: #25282A;; /* cor midnight*/
+  color: #F9F6EF;
+}
+
+header, footer{
+    min-width: 100%;
+    min-height: 10%;
+    z-index: 1;
+    padding: 0.25em;
+    background-color: #171E27; /* cor black*/
+    color: #F9F6EF;
+}
+
+header .logo {
+    height: 100%;
+    padding-top: 1rem;
+}
+
+header .logo h1 a{ 
+    text-decoration: none;
+    color: inherit;
+}
+
+header .search form > input{
+    background-color: #4C4A46;
+    color: #FFE681;
+    font-family: inherit;
+    font-weight: bolder;
+    font-size: 26px;
+    padding: 0 25px 0 10px;
+    border: 4px solid #F9F6EF;
+    border-radius: 35px; /* (height/2) + border-width */
+}
+
+header .menu nav > ul > li {
+    text-transform: uppercase;
+    list-style: none;
+    display: inline;
+    cursor: pointer;
+    margin: auto 0;
+}
+
+header .menu nav ul li a {
+    color: inherit;
+}
+
+/*header div:hover{border: 2px solid #FAE0D8;}*/
+
+header .menu nav ul li:hover {
+    border-bottom: 3px solid #FFE681;
+    color: #A5282C;
+}
+nav > ul > li > a{padding: 0.5em}
+
+a:hover, a:focus, a:visited {
+	color: $link-c;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 20px 20px 0;
+    line-height: 150%;
+    letter-spacing: 2px;  
+}
+
+main {
+    width: 100%;
+    margin: 1em 0 2em auto;
+    height: 80vh;
+}
+footer{
+    text-align: center;
+}
+footer div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer div div nav{
+   align-items: center;
+   flex-direction: row;
+   flex-wrap: nowrap;
+
+}
+
+footer div nav > ul > li {
+    text-transform: uppercase;
+    list-style: none;
+    cursor: pointer;
+    margin: auto 0;
+}
+footer div > div:nth-child(1){
+    margin-top: 0.5em;
+}
+
+footer div > div:nth-child(2){
+     margin: 1.25em auto;
+     align-items: center;
+}
+
+footer div div img{
+width: 50%;
+max-height: 25em;
+}
+
+.blue {background-color: #043458;} /* cor blue*/
+
+.red {background-color: #A5282C;} /* cor red*/
+ 
+.green{background-color: #364935;} /* cor verde*/
+
+.lightgreen{background-color: #4E5851;} /* cor verde*/
+
+.grey{background-color: #4C4A46;} /* cor marrom*/
+
+.dark{background-color: #25282A;} /* cor space gray*/
+     
+.night{background-color: #171E27;} /* cor midnight*/
+
+.white{background-color: #FBF7F4;} /* cor branca*/
+
+.lightyellow{background-color: #FFE681;} /* cor verde*/
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
