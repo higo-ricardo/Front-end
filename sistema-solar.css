@@ -1,0 +1,265 @@
+
+        @import url("https://fonts.googleapis.com/css?family=Turret+Road&display=swap");
+
+        *,
+        *:after,
+        *:before {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          text-decoration: none;
+        }
+        
+        html,
+        body,
+        article,
+        section,
+        div,
+        span {
+          margin: 0;
+          padding: 0;
+          border: 0;
+        }
+        :root{
+          --x: 1px;
+          --y: 10px;
+        }
+        
+        body{
+            min-height: 100vh;
+          font-family: "turret Road";
+            font-size: 1.5rem;
+            font-weight: bolder;
+          background-color: #25282A;; /* cor midnight*/
+          color: #F9F6EF;
+        }
+
+        .sistema {
+            position: absolute;
+            top: 18rem;
+            left: 45rem;
+          }
+          
+        .sol {
+          position: absolute;
+            width: calc(var(--x)*30);
+            height:calc(var(--x)*30);
+            border-radius: 50%;
+            cursor: pointer;
+            background: yellow; 
+            z-index: 1;
+}
+
+          .mercurio {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 50%;
+            cursor: pointer;
+            width: calc(var(--x)*5);
+            height:calc(var(--x)*5);
+            background: lightyellow;
+          }
+
+          .venus {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 50%;
+            cursor: pointer;
+            width: calc(var(--x)*14);
+            height:calc(var(--x)*14);
+            background: lightblue;
+          }
+
+          .terra {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 50%;
+            cursor: pointer;
+            width: calc(var(--x)*15);
+            height:calc(var(--x)*15);
+            background: dodgerblue;
+          }
+
+          .marte {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 50%;
+            cursor: pointer;
+            width: calc(var(--x)*8);
+            height:calc(var(--x)*8);
+            background: orangered;
+          }
+
+          .jupiter {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 50%;
+            cursor: pointer;
+            width: calc(var(--x)*18);
+            height:calc(var(--x)*18);
+            background: orange;
+          }
+
+          .saturno {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 50%;
+            cursor: pointer;
+            width: calc(var(--x)*16);
+            height:calc(var(--x)*16);
+            background: yellowgreen;
+           
+          }
+          @keyframes sol {
+            from {
+              box-shadow:  0 0 10px 5px darkgoldenrod;
+              
+            }
+            to {
+              box-shadow:  0 0 10px 5px #FFE681;
+           
+            }
+          }
+                 
+
+          @keyframes mercurio  {
+            from {
+              transform:
+                rotate(0deg)
+                translateX(calc(var(--y)*6));
+            }
+            to {
+              transform:
+                rotate(360deg)
+                translateX(calc(var(--y)*6));
+            }
+          }
+
+          @keyframes venus {
+            from {
+              transform:
+                rotate(0deg)
+                translateX(calc(var(--y)*9));
+            }
+            to {
+              transform:
+                rotate(360deg)
+                translateX(calc(var(--y)*9));
+            }
+          }
+  
+          @keyframes terra {
+          from {
+            transform:
+              rotate(0deg)
+              translateX(calc(var(--y)*12));
+          }
+          to {
+            transform:
+              rotate(360deg)
+              translateX(calc(var(--y)*12));
+          }
+        }
+
+        @keyframes marte {
+          from {
+            transform:
+              rotate(0deg)
+              translateX(calc(var(--y)*18));
+          }
+          to {
+            transform:
+              rotate(360deg)
+              translateX(calc(var(--y)*18));
+          }
+        }
+        
+        @keyframes jupiter {
+          from {
+            transform:
+              rotate(0deg)
+              translateX(calc(var(--y)*22));
+          }
+          to {
+            transform:
+              rotate(360deg)
+              translateX(calc(var(--y)*22));
+          }
+        }
+
+        @keyframes saturno {
+          from {
+            transform:
+              rotate(0deg)
+              translateX(calc(var(--y)*24));
+          }
+          to {
+            transform:
+              rotate(360deg)
+              translateX(calc(var(--y)*24));
+          }
+        }
+
+        @media (
+          prefers-reduced-motion: no-preference
+        ) {
+          .sol{
+            animation: sol 1550ms ease-in-out infinite alternate;  
+          }
+
+          .mercurio {
+            animation:
+              mercurio 3860ms linear infinite;
+          }
+
+          .venus {
+            animation:
+              venus 7000ms linear infinite;
+          }
+
+          .terra {
+            animation:
+              terra 16000ms linear infinite;
+          }
+
+          .marte {
+            animation:
+              marte 10000ms linear infinite;
+          }
+
+          .jupiter {
+            animation:
+              jupiter 15000ms linear infinite;
+          }
+
+          .saturno {
+            animation:
+              saturno 20000ms linear infinite;
+          }
+        }
+
+        
