@@ -1,76 +1,172 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O PAPEL DO INSTAGRAM NA EDUCAÇÃO</title>
     <link rel="stylesheet" href="header.css">
-</head>
-<body class="flex">
-   
-    <header class="flex">
+  </head>
+
+  <body class="flex">
+  <header class="flex">
        
-            <div class="logo">
-                <h1><a href="index.html">HIVERCAR</a></h1>
-            </div>
+    <div class="logo">
+        <h1>INSTAGRAM E EDUCAÇÃO</h1>
+    </div>
 
-            <div class="search">
-                    <form class="" action="#" method="post">
-                        <input class="campo dark" type="search" placeholder="Digite aqui...">
-                    </form>
-            </div>
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li>
-                          <a href="">Home</a>
-                        </li>
-                        <li>
-                          <a href="">AUTORES</a>
-                        </li>
-                        <li><a href="#">DOWNLOADS</a></li>
-                    </ul>
-                </nav>  
-            </div>
-
-            <div class="toggle"></div>
-    </header>
-   
-         <main>
-
+    <div id="search">
+      <form action="" method="post">
+        <input id="box-search" type="text" placeholder=" O que você procura? " autocomplete="off" required>
+        <button id="btn-search" type="submit"><img src="./image/lupa.png" alt="" srcset=""></button>
+      </form>
       
-                       
-       
-        </main>
+    </div>
+   
+    <div class="">
+        <input id="toggle" type="checkbox" />
+        <label class="menu__btn" for="toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#">HOME</a></li>
+          <li><a class="menu__item" href="#">AUTORES</a></li>
+          <li><a class="menu__item" href="#">ARTIGOS</a></li>
+          <li><a class="menu__item" href="#">LINKS ÚTEIS</a></li>
+        </ul>
+    </div>
+  </header>
+   
+  <main>
+    <div class="galeria">
+        <input type="radio" id="uno" value="1" name="tractor" checked='checked' />    
+        <input type="radio" id="dole" value="2" name="tractor" />      
+        <input type="radio" id="tele" value="3" name="tractor" />
+  
+          <article class='card una'>
+            <h2 class='entypo-tag'>INTRODUÇÃO</h2>
+              <p>Este trabalho principiou na  necessidade de
+                se mapear quais as formas de uso da plataforma
+                Instagram que são empregadas no processo educativo
+                brasileiro, em especial no Ensino Médio.
+                <br/></p>
+            <ul class='slider'>
+              <li class='entypo-bell'></li>
+              <li class='entypo-mic'></li>
+              <li class='entypo-megaphone'></li>
+            </ul>
+            <label for='dole' class='entypo-left-bold otra'>&#9668;</label>
+            <label for='tele' class='entypo-right-bold otra'>&#9658;</label>
+            <label for='uno' class='entypo-arrows-ccw afin'></label>  
+          </article>
+  
+          <article class='card dos'>
+            <h2 class='entypo-feather'>JUSTIFICATIVA</h2>
+              <p>A hipótese deste trabalho é que a plataforma Instagram 
+                é um fator modulador da inovação pedagógica com casos de 
+                uso ainda pouco conhecidos, porquanto há de se conhecer e 
+                conferir maior publicidade a essas como estratégias acreditadas.</p>
+            <ul class='slider'>
+              <li class='entypo-network'></li>
+              <li class='entypo-qq'></li>
+              <li class='entypo-picasa'></li>
+            </ul>
+            <label for='tele' class='entypo-left-bold otra'>&#9668;</label>
+            <label for='uno' class='entypo-right-bold otra'>&#9658;</label>
+            <label for='dole' class='entypo-arrows-ccw afin'></label>  
+          </article>
+          
+          <article class='card tres'>
+            <h2 class='entypo-address'>OBJETIVO GERAL</h2>
+              <p>O objetivo geral é investigar os principais usos
+                da rede Instagram na educação brasileira.</p>
+            <ul class='slider'>
+              <li class='entypo-ccw'></li>
+              <li class='entypo-arrows-ccw'></li>
+              <li class='entypo-cw'></li>
+            </ul>
+            <label for='uno' class='entypo-left-bold otra'>&#9668;</label>
+            <label for='dole' class='entypo-right-bold otra'>&#9658;</label>
+            <label for='tele' class='entypo-arrows-ccw afin'></label>  
+          </article>
+    </div>
 
-        <footer>
-            <div class="flex">
-                <div>
-                    <nav>
-                        <ul class="flex">
-                            <li><a href="">QUEM SOMOS</a></li>
-                            <li><a href="">FUNCIONAMENTO</a></li>
-                            <li><a href="">ATENDIMENTO</a></li>
-                            <li><a href="">PRIVACIDADE</a></li>
-                            <li><a href="#">TERMOS DE USO</a></li>
-                          
-                        </ul>
-                    </nav>  
-                </div>
-                
-                <div>
-                    <img src="./image/carro.jpg" alt="">
-                </div>
-            </div>
+    <div class="column">
+      <div class="red">
+      <h3>O que é o Instagram?</h3>
+      <p>É uma rede social da modalidade onde os usuários podem interagir com seus seguidores por meio de funcionalidades como stories
+        ou timeline, nesse último pode fazer postagem de vídeo, fotos e enquetes.</p>
+      </div>  
+    
+      <div class="">
+      <img src="./image/INSTAGRAM.png" alt="" srcset="">
+      </div>
+
+      <div class="item green">
+      <h3>Como usar o Instagram?</h3>
+      <p>Para te ajudar, criamos dez dicas para entender as possibilidades de uso que a rede oferece.</p>
+      
+    
+      <p>O emprego como fonte de pesquisa talvez seja a mais fácil aplicação porque, nesse caso, o usuário de se valer da sua familiaridade
+        com mecanismos de busca. Como ferramenta de busca, destaca-se de seus pares em razão da funcionalidade <em>hashtag</em>.</p>
+      </div>
+      
+      <div class="grey">
+    <h3>CONCLUSÃO</h3>
+  <p>
+    Neste artigo, voçê pode perceber que  existem casos de uso bastantes divulgados na literatura acadêmica, mas nada
+    impede que o professor crie seu próprio modelo para solucionar as nacessidades.</p>
+    <p>o Instagram vem contribuindo para a melhoria qualitativa da Educação brasileira. A aplicação pedagógica de redes
+        sociais é possível, seja como ferramenta, seja como metodologia respeitadas as experiências dos envolvidos e as 
+        dificuldades a serem superadas.</p>
+        <p>Gostou do nosso glossário? Aprendeu algo de novo por aqui hoje? Você já conhecia todas esses conceitos?
+          Quais outros você colocaria nesta lista? Me conta aqui nos comentários 🙂</p>
+      </div>
+
+      <div class="">
+        <h3>ASSISTA TAMBÉM</h3>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/l6KYiMUqLGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div>
+      <h2> Este site utiliza cookies</h2>
+      <p>
+        Cookies são importantes para o funcionamento deste site, para garantir a sua segurança e para melhorar a sua experiência.
+        Ao clicar em OK, você concorda com a utilização destes cookies. Para mais informações acesse a Política de cookies e nossa
+        Política de Privacidade.
+      </p>
+    
+</div>
+  </main>
+
+  <footer>
+    <div class="feedback grey flex">
+      <h3 class="newsletter-header">MANTENHA-SE ATUALIZADO!</h3>
+     
+      <form class="">
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" /> 
+     
         
-            <div>
-                    <p>&copy; 2021 Higo Ricardo. Todos os direitos reservados.</p>
-                    <p></p>
-            </div>
-            
-        </footer>
+        <input type="email" id="email" name="email" placeholder="seunome@provedor.com.br"/>
+    
+        
+        <textarea id="comentarios" name="comentarios" placeholder="Ecreva aqui..." rows="5"></textarea>
+      
+        
+        
+        <input id="enviar" type="submit" value="INSCREVER" />
+        
+      </form>
+    </div>
+  
+    <div class="copyright">
+      <p>&copy; copyright 2021. KD Inovation LTDA.</p>
+      <p></p>
+    </div>          
+  </footer>
   
    
-</body>
+  </body>
 </html>
